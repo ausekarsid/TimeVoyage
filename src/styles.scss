@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.custom-dialog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,
+      0,
+      0,
+      0.5);
+  /* Semi-transparent background to prevent clicks on the background */
+}
+
+.vis-item {
+  cursor: pointer;
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.vis-item-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 1.25px;
+  font-weight: 500;
+}
+
+.vis-item .vis-item-content {
+  padding: 3px;
+}
+
+.vis-item.vis-selected {
+  background-color: white;
+  border-color: black;
+  z-index: 2;
+}
+
+div.vis-tooltip {
+  color: white !important;
+  background: black !important;
+  text-wrap: pretty;
+}
